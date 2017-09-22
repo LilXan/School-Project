@@ -1,22 +1,991 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.12
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{62714D8F-85DE-4540-AD00-7E57470073B7}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{62714D8F-85DE-4540-AD00-7E57470073B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{62714D8F-85DE-4540-AD00-7E57470073B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{62714D8F-85DE-4540-AD00-7E57470073B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{62714D8F-85DE-4540-AD00-7E57470073B7}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-EndGlobal
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp1
+{
+    public partial class Form1 : Form
+    {
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        int TOTALSUM = 0;
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        string lel;
+        int aaa;
+        int firstL = 0;
+        int sumar = 0;
+        int SUPERPOSITION = 0;
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if (comboBox1.Text == "")
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 0;
+                }
+                else if ((comboBox1.Text != "ERROR") && (comboBox1.Text != Convert.ToString(result)) && (comboBox1.Text != "-0"))
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 0;
+                }
+                else if (comboBox1.Text[aaa] == ',')
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 0;
+                }
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if (comboBox1.Text == "")
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 7;
+                }
+                else if ((comboBox1.Text != "ERROR") && (comboBox1.Text != Convert.ToString(result)) && (comboBox1.Text != "-0"))
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 7;
+                }
+                else if (SUPERPOSITION != 0)
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 7;
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if (comboBox1.Text == "")
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 1;
+                }
+                else if ((comboBox1.Text != "ERROR") && (comboBox1.Text != Convert.ToString(result)) && (comboBox1.Text != "-0"))
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 1;
+                }
+                else if (SUPERPOSITION != 0)
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 1;
+                }
+            }
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if (comboBox1.Text == "")
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 4;
+                }
+                else if ((comboBox1.Text != "ERROR") && (comboBox1.Text != Convert.ToString(result)) && (comboBox1.Text != "-0"))
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 4;
+                }
+                else if (SUPERPOSITION != 0)
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 4;
+                }
+            }
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if (comboBox1.Text == "")
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 2;
+                }
+                else if ((comboBox1.Text != "ERROR") && (comboBox1.Text != Convert.ToString(result)) && (comboBox1.Text != "-0"))
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 2;
+                }
+                else if (SUPERPOSITION != 0)
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 2;
+                }
+            }
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if (comboBox1.Text == "")
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 5;
+                }
+                else if ((comboBox1.Text != "ERROR") && (comboBox1.Text != Convert.ToString(result)) && (comboBox1.Text != "-0"))
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 5;
+                }
+                else if (SUPERPOSITION != 0)
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 5;
+                }
+            }
+        }
+
+        private void button7_Click_1(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if (comboBox1.Text == "")
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 8;
+                }
+                else if ((comboBox1.Text != "ERROR") && (comboBox1.Text != Convert.ToString(result)) && (comboBox1.Text != "-0"))
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 8;
+                }
+                else if (SUPERPOSITION != 0)
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 8;
+                }
+            }
+        }
+
+        private void button11_Click_1(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if (comboBox1.Text == "")
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 9;
+                }
+                else if ((comboBox1.Text != "ERROR") && (comboBox1.Text != Convert.ToString(result)) && (comboBox1.Text != "-0"))
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 9;
+                }
+                else if (SUPERPOSITION != 0)
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 9;
+                }
+            }
+        }
+
+        private void button10_Click_1(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if (comboBox1.Text == "")
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 6;
+                }
+                else if ((comboBox1.Text != "ERROR") && (comboBox1.Text != Convert.ToString(result)) && (comboBox1.Text != "-0"))
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 6;
+                }
+                else if (SUPERPOSITION != 0)
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 6;
+                }
+            }
+        }
+
+        private void button9_Click_1(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if (comboBox1.Text == "")
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 3;
+                }
+                else if ((comboBox1.Text != "ERROR") && (comboBox1.Text != Convert.ToString(result)) && (comboBox1.Text != "-0"))
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 3;
+                }
+                else if (SUPERPOSITION != 0)
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += 3;
+                }
+            }
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if ((TOTALSUM != 0) && (comboBox1.Text != Convert.ToString(result)) && (comboBox1.Text != "-") && (comboBox1.Text != "ERROR") && (comboBox1.Text[aaa] != '+') && (comboBox1.Text[aaa] != '-') && (comboBox1.Text[aaa] != '*') && (comboBox1.Text[aaa] != '/') && (comboBox1.Text != ""))
+                {
+                    if (sumar == 0)
+                    {
+                        TOTALSUM++;
+                        sumar++;
+                        comboBox1.Text += ',';
+                        SUPERPOSITION++;
+                    }
+                }
+                else if ((comboBox1.Text != "") && (comboBox1.Text[0] == '0') && (comboBox1.Text[aaa] == '0'))
+                {
+                    TOTALSUM++;
+                    sumar++;
+                    comboBox1.Text += ',';
+                    SUPERPOSITION++;
+                }
+            }
+        }
+        double first = 0, second = 0;
+        int CHECKER = 0;
+        private void button13_Click(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if ((comboBox1.Text != "") && (CHECKER == 0) && ((TOTALSUM != 0) || (TOTALSUM != 1)) && ((comboBox1.Text[aaa] != ',') && (comboBox1.Text[aaa] != '-')))
+                {
+                    sumar = 0;
+                    if ((comboBox1.Text != "-") && (comboBox1.Text != ","))
+                    {
+                        first = Convert.ToDouble(comboBox1.Text);
+                        firstL = comboBox1.Text.ToString().Length;
+                        CHECKER = 1;
+                        comboBox1.Text += '+';
+                    }
+                }
+            }
+        }
+        private void button14_Click(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if ((comboBox1.Text != "") && (CHECKER == 0) && (TOTALSUM != 0) && (comboBox1.Text[aaa] != ','))
+                {
+                    sumar = 0;
+                    if (comboBox1.Text != "-")
+                    {
+                        first = Convert.ToDouble(comboBox1.Text);
+                        firstL = comboBox1.Text.ToString().Length;
+                        CHECKER = 2;
+                        comboBox1.Text += '-';
+                    }
+                }
+                else if (TOTALSUM == 0)
+                {
+                    TOTALSUM++;
+                    comboBox1.Text += '-';
+                }
+            }
+        }
+        string WOW = null;
+        double result;
+        int aa;
+        int kas = 0;
+        private void button15_Click(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if ((kas == 0) && (CHECKER != 0) && (comboBox1.Text[aaa] != '*') && (comboBox1.Text[aaa] != '/') && (comboBox1.Text[aaa] != '-') && (comboBox1.Text[aaa] != '+') && (comboBox1.Text[aaa] != ','))
+                {
+                    if ((TOTALSUM != 0) && (CHECKER != 0) && (comboBox1.Text != "ERROR") && (comboBox1.Text[comboBox1.Text.ToString().Length - 1] != ','))
+                    {
+                        aa = firstL;
+                        for (int i = aa + 1; i < TOTALSUM + 1; i++)
+                        {
+                            WOW += comboBox1.Text[i];
+                        }
+                        second = Convert.ToDouble(WOW);
+                        if ((second == 0) && (CHECKER == 4))
+                        {
+                            comboBox1.Text = "ERROR";
+
+                        }
+                        else
+                        {
+                            switch (CHECKER)
+                            {
+                                case 1: result = first + second; break;
+                                case 2: result = first - second; break;
+                                case 3: result = first * second; break;
+                                case 4: result = first / second; break;
+                                case 5: result = Math.Pow(first, second); break;
+                                case 6: result = Math.Log(first) / Math.Log(second); break;
+                            }
+                            comboBox1.Text = Convert.ToString(result);
+                        }
+                    }
+                    kas++;
+                }
+            }
+        }
+        private void button16_Click(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if ((comboBox1.Text != "") && (CHECKER == 0) && ((TOTALSUM != 0) || (TOTALSUM != 1)) && ((comboBox1.Text[aaa] != ',') && (comboBox1.Text[aaa] != '-') && (comboBox1.Text != "")))
+                {
+                    sumar = 0;
+                    if (comboBox1.Text != "-")
+                    {
+                        first = Convert.ToDouble(comboBox1.Text);
+                        firstL = comboBox1.Text.ToString().Length;
+                        CHECKER = 3;
+                        comboBox1.Text += '*';
+                    }
+                }
+            }
+        }
+        double sin, cos, sqrt, SORE, tan, xq;
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if ((comboBox1.Text != "") && (CHECKER == 0) && (comboBox1.Text != "-") && (comboBox1.Text != "ERROR") && (comboBox1.Text[aaa] != '+') && (comboBox1.Text[aaa] != '-') && (comboBox1.Text[aaa] != '*') && (comboBox1.Text[aaa] != '/') && (comboBox1.Text != ""))
+                {
+                    SORE = Convert.ToDouble(comboBox1.Text);
+                    sqrt = Math.Sqrt(SORE);
+                    comboBox1.Text = Convert.ToString(sqrt);
+                }
+            }
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if ((comboBox1.Text != "") &&(comboBox1.Text[aaa] != '0') && (comboBox1.Text[aaa] != '+') && (comboBox1.Text != "ERROR") && (comboBox1.Text != Convert.ToString(result)) && (comboBox1.Text != "-0") && (comboBox1.Text != "-"))
+                {
+                    TOTALSUM++;
+                    TOTALSUM++;
+                    comboBox1.Text += 0;
+                    comboBox1.Text += 0;
+                }
+                else if (SUPERPOSITION != 0)
+                {
+                    TOTALSUM++;
+                    TOTALSUM++;
+                    comboBox1.Text += 0;
+                    comboBox1.Text += 0;
+                }
+            }
+        }
+        int rd = 0;
+        private void button24_Click(object sender, EventArgs e)
+        {
+            if (rd == 0) //degrees
+            {
+                rd++;
+                label1.Text = "DEGREES";
+            }
+            else //radians
+            {
+                rd = 0;
+                label1.Text = "RADIANS";
+            }
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if ((comboBox1.Text != "") && (CHECKER == 0) && (comboBox1.Text != "-") && (comboBox1.Text != "ERROR") && (comboBox1.Text[aaa] != '+') && (comboBox1.Text[aaa] != '-') && (comboBox1.Text[aaa] != '*') && (comboBox1.Text[aaa] != '/') && (comboBox1.Text != ""))
+                {
+                    xq = Convert.ToDouble(comboBox1.Text);
+                    xq = xq * xq;
+                    comboBox1.Text = Convert.ToString(xq);
+                }
+            }
+        }
+        private void button25_Click(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if ((comboBox1.Text != "") && (CHECKER == 0) && ((TOTALSUM != 0) || (TOTALSUM != 1)) && ((comboBox1.Text[aaa] != ',') && (comboBox1.Text[aaa] != '-') && (comboBox1.Text != "")))
+                {
+                    sumar = 0;
+                    if (comboBox1.Text != "^")
+                    {
+                        first = Convert.ToDouble(comboBox1.Text);
+                        firstL = comboBox1.Text.ToString().Length;
+                        CHECKER = 5;
+                        comboBox1.Text += '^';
+                    }
+                }
+            }
+        }
+        double faktor = 1;
+        private void button26_Click(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if ((comboBox1.Text != "") && (CHECKER == 0) && (comboBox1.Text != "-") && (comboBox1.Text != "ERROR") && (comboBox1.Text[aaa] != '+') && (comboBox1.Text[aaa] != '-') && (comboBox1.Text[aaa] != '*') && (comboBox1.Text[aaa] != '/') && (comboBox1.Text != ""))
+                {
+                    SORE = Convert.ToDouble(comboBox1.Text);
+                    if ((int)SORE == SORE)
+                    {
+                        for (double i = SORE; i > 0; i--)
+                        {
+                            faktor *= i;
+                        }
+                        comboBox1.Text = Convert.ToString(faktor);
+                    }
+                    else
+                    {
+                        comboBox1.Text = "ERROR";
+                    }
+                }
+            }
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if ((comboBox1.Text != "") && (CHECKER == 0) && (comboBox1.Text[aaa] != ',') && (comboBox1.Text != "-") && (comboBox1.Text != "ERROR") && (comboBox1.Text[aaa] != '+') && (comboBox1.Text[aaa] != '-') && (comboBox1.Text[aaa] != '*') && (comboBox1.Text[aaa] != '/') && (comboBox1.Text != ""))
+                {
+                    SORE = Convert.ToDouble(comboBox1.Text);
+                    SORE = Math.Log10(SORE);
+                    comboBox1.Text = Convert.ToString(SORE);
+                    ggwp++;
+                }
+            }
+        }
+
+        private void button29_Click(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if ((comboBox1.Text != "") && (comboBox1.Text[aaa] != ',') && (CHECKER == 0) && (comboBox1.Text != "-") && (comboBox1.Text != "ERROR") && (comboBox1.Text[aaa] != '+') && (comboBox1.Text[aaa] != '-') && (comboBox1.Text[aaa] != '*') && (comboBox1.Text[aaa] != '/') && (comboBox1.Text != ""))
+                {
+                    SORE = Convert.ToDouble(comboBox1.Text);
+                    SORE = Math.Log(SORE);
+                    comboBox1.Text = Convert.ToString(SORE);
+                    ggwp++;
+                }
+            }
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if ((comboBox1.Text != "") && (CHECKER == 0) && ((TOTALSUM != 0) || (TOTALSUM != 1)) && ((comboBox1.Text[aaa] != ',') && (comboBox1.Text[aaa] != '-') && (comboBox1.Text != "")))
+                {
+                    sumar = 0;
+                    if (comboBox1.Text != " ")
+                    {
+                        first = Convert.ToDouble(comboBox1.Text);
+                        firstL = comboBox1.Text.ToString().Length;
+                        comboBox1.Text += " ";
+                        CHECKER = 6;
+                    }
+                }
+            }
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if ((comboBox1.Text != "") && (comboBox1.Text[aaa] != ',') && (CHECKER == 0) && (comboBox1.Text != "-") && (comboBox1.Text != "ERROR") && (comboBox1.Text[aaa] != '+') && (comboBox1.Text[aaa] != '-') && (comboBox1.Text[aaa] != '*') && (comboBox1.Text[aaa] != '/') && (comboBox1.Text != ""))
+                {
+                    SORE = Convert.ToDouble(comboBox1.Text);
+                    if (SORE != 0)
+                    {
+                        SORE = 1.0 / SORE;
+                        comboBox1.Text = Convert.ToString(SORE);
+                    }
+                    else
+                    {
+                        comboBox1.Text = "ERROR";
+                    }
+                }
+            }
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if ((rd == 0) && (comboBox1.Text != "") && (CHECKER == 0) && (comboBox1.Text != "-") && (comboBox1.Text != "ERROR") && (comboBox1.Text[aaa] != '+') && (comboBox1.Text[aaa] != '-') && (comboBox1.Text[aaa] != '*') && (comboBox1.Text[aaa] != '/') && (comboBox1.Text != ""))
+                {
+                    SORE = Convert.ToDouble(comboBox1.Text);
+                    tan = Math.Tan(SORE);
+                    comboBox1.Text = Convert.ToString(tan);
+                }
+                else if ((rd != 0) && (comboBox1.Text != "") && (CHECKER == 0) && (comboBox1.Text != "-") && (comboBox1.Text != "ERROR") && (comboBox1.Text[aaa] != '+') && (comboBox1.Text[aaa] != '-') && (comboBox1.Text[aaa] != '*') && (comboBox1.Text[aaa] != '/') && (comboBox1.Text != ""))
+                {
+                    SORE = Convert.ToDouble(comboBox1.Text);
+                    if ((SORE == 180) || (SORE == 360))
+                    {
+                        comboBox1.Text = "0";
+                        ggwp++;
+                    }
+                    else if ((SORE == 90) || (SORE == 270))
+                    {
+                        comboBox1.Text = "Nan";
+                        ggwp++;
+                    }
+                    else
+                    {
+                        SORE = SORE * Math.PI / 180.0;
+                        tan = Math.Tan(SORE);
+                        comboBox1.Text = Convert.ToString(tan);
+                        ggwp++;
+                    }
+                }
+            }
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if ((rd == 0) && (comboBox1.Text != "") && (CHECKER == 0) && (comboBox1.Text != "-") && (comboBox1.Text != "ERROR") && (comboBox1.Text[aaa] != '+') && (comboBox1.Text[aaa] != '-') && (comboBox1.Text[aaa] != '*') && (comboBox1.Text[aaa] != '/') && (comboBox1.Text != ""))
+                {
+                    SORE = Convert.ToDouble(comboBox1.Text);
+                    cos = Math.Cos(SORE);
+                    comboBox1.Text = Convert.ToString(cos);
+                }
+                else if ((rd != 0) && (comboBox1.Text != "") && (CHECKER == 0) && (comboBox1.Text != "-") && (comboBox1.Text != "ERROR") && (comboBox1.Text[aaa] != '+') && (comboBox1.Text[aaa] != '-') && (comboBox1.Text[aaa] != '*') && (comboBox1.Text[aaa] != '/') && (comboBox1.Text != ""))
+                {
+                    SORE = Convert.ToDouble(comboBox1.Text);
+                    if ((SORE == 90) || (SORE == 270))
+                    {
+                        comboBox1.Text = "-1";
+                        ggwp++;
+                    }
+                    else
+                    {
+                        SORE = SORE * Math.PI / 180.0;
+                        cos = Math.Cos(SORE);
+                        comboBox1.Text = Convert.ToString(cos);
+                        ggwp++;
+                    }
+                }
+            }
+        }
+        int ggwp = 0;
+        private void button17_Click(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if ((rd == 0) && (comboBox1.Text != "") && (CHECKER == 0) && (comboBox1.Text != "-") && (comboBox1.Text != "ERROR") && (comboBox1.Text[aaa] != '+') && (comboBox1.Text[aaa] != '-') && (comboBox1.Text[aaa] != '*') && (comboBox1.Text[aaa] != '/') && (comboBox1.Text != ""))
+                {
+                    SORE = Convert.ToDouble(comboBox1.Text);
+                    sin = Math.Sin(SORE);
+                    comboBox1.Text = Convert.ToString(sin);
+                }
+                else if ((rd != 0) && (comboBox1.Text != "") && (CHECKER == 0) && (comboBox1.Text != "-") && (comboBox1.Text != "ERROR") && (comboBox1.Text[aaa] != '+') && (comboBox1.Text[aaa] != '-') && (comboBox1.Text[aaa] != '*') && (comboBox1.Text[aaa] != '/') && (comboBox1.Text != ""))
+                {
+                    SORE = Convert.ToDouble(comboBox1.Text);
+                    if ((SORE == 180) || (SORE == 360))
+                    {
+                        comboBox1.Text = "0";
+                        ggwp++;
+                    }
+                    else
+                    {
+                        SORE = SORE * Math.PI / 180.0;
+                        sin = Math.Sin(SORE);
+                        comboBox1.Text = Convert.ToString(sin);
+                        ggwp++;
+                    }
+                }
+            }
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            if (ggwp == 0)
+            {
+                lel = null;
+                aaa = 0;
+                lel = comboBox1.Text.ToString();
+                if (lel != "")
+                {
+                    aaa = lel.Length - 1;
+                }
+                else
+                {
+                    aaa = lel.Length;
+                }
+                if ((comboBox1.Text != "") && (CHECKER == 0) && ((TOTALSUM != 0) || (TOTALSUM != 1)) && ((comboBox1.Text[aaa] != ',') && (comboBox1.Text[aaa] != '-') && (comboBox1.Text != "")))
+                {
+                    sumar = 0;
+                    if (comboBox1.Text != "-")
+                    {
+                        first = Convert.ToDouble(comboBox1.Text);
+                        firstL = comboBox1.Text.ToString().Length;
+                        CHECKER = 4;
+                        comboBox1.Text += '/';
+                    }
+                }
+            }
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            comboBox1.Text = null;
+            TOTALSUM = 0;
+            CHECKER = 0;
+            first = 0;
+            second = 0;
+            WOW = null;
+            result = 0;
+            sumar = 0;
+            sin = 0;
+            ggwp = 0;
+            SORE = 0;
+            lel = null;
+            tan = 0;
+            xq = 0;
+            faktor = 1;
+            firstL = 0;
+            aaa = 0;
+            cos = 0;
+            aa = 0;
+            kas = 0;
+            SUPERPOSITION = 0;
+            sqrt = 0;
+        }
+    }
+}
